@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:speech_to_text/speech_to_text.dart';
 import 'package:speech_to_text/speech_recognition_result.dart';
 import 'package:voice_assistant/feature_box.dart';
+import 'package:animate_do/animate_do.dart';
 import 'package:voice_assistant/pallete.dart';
 import 'package:voice_assistant/secrets.dart';
 import 'package:voice_assistant/openai_service.dart';
@@ -73,7 +74,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: BounceInDown(
-          child: const Text('Allen'),
+          child: const Text('Voice Assistant'),
         ),
         leading: const Icon(Icons.menu),
         centerTitle: true,
